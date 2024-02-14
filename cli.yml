@@ -1,0 +1,10 @@
+---
+- name: MY Global varibales
+  hosts: all
+  file_vars:
+      URL: "sai"
+  tasks:
+    - name: file  
+      debug:
+        msg: "{{URL}}"
+...
