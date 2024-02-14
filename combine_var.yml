@@ -1,0 +1,16 @@
+---
+- name: MY Global varibales
+  hosts: all
+  vars:
+      URL: www.sai-global.com
+  tasks:
+    - name: Display Global varibales value
+      debug:
+        msg: "{{URL}}"
+
+    - name: Display local varibales value
+      debug:
+      vars:
+        URL: www.piyush-local.com
+        msg: "{{URL}}"
+...
