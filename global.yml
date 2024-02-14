@@ -1,0 +1,11 @@
+---
+- name: MY Global varibales
+  hosts: all
+  vars:
+      URL: www.sai.com
+  tasks:
+    - name: Display Debug Message
+      debug:
+        msg: "{{URL}}"
+
+...
