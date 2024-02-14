@@ -10,7 +10,7 @@
 
     - name: Display local varibales value
       debug:
+        msg: "{{URL}}"
       vars:
         URL: www.piyush-local.com
-        msg: "{{URL}}"
 ...
