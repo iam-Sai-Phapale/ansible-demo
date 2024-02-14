@@ -1,0 +1,8 @@
+--- 
+- hosts : all
+  name : play1
+  tasks:
+    - name : Install Apache2
+      apt: name=apache2 state=latest
+      become: true
+      
