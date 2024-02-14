@@ -4,6 +4,7 @@
   vars_prompt:
     - name: URL
       prompt: "Enter your URL Not needed"
+      private : false
   tasks:
   - name: example task
     debug:
