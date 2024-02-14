@@ -1,8 +1,7 @@
 ---
 - name: MY Global varibales
   hosts: all
-  file_vars:
-      URL: "sai"
+  vars_files: "sai.yml"
   tasks:
     - name: file  
       debug:
