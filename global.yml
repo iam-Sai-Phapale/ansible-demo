@@ -4,8 +4,7 @@
   vars:
       URL: www.sai.com
   tasks:
-    - name: Display Debug Message
+    - name: Display Global varibales value
       debug:
         msg: "{{URL}}"
-
 ...
