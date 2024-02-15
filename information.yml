@@ -2,15 +2,15 @@
 - name: This is Informtaion for Node-1
   hosts: all
   become: true
-  tasks: Number1
+  task: 
     - name: what is gid of local user
       debug:
         msg: "{{ansible_user_gid}}"
-  tasks: Number2
+  task:
     - name: what is ansible_os_family of local user 
       debug:
         msg: "{{ansible_os_family}}"
-  tasks: Number3
+  task: 
     - name: what is ansible_machine_id of local user 
       debug:
         msg: "{{ansible_machine_id}}"
