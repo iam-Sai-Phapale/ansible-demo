@@ -12,7 +12,7 @@
     - name: Task 3 - what is ansible_machine_id of local user 
       debug:
         msg: "{{ansible_machine_id}}"
-    - name: Task 4 - what is ansible_machine_id of local user 
+    - name: Task 4 - what is ansible_processor of local user 
       debug:
         msg: "{{ansible_processor}}"        
 ...        
