@@ -3,7 +3,7 @@
   hosts: all
   become: true
   tasks:
-    - shell: echo "This is online CDEC_DevOps Batch" >> /mnt/analysis.txt
+    - shell: echo "My Name is Sai Phapale" >> /mnt/analysis.txt
     - name: This our first shell task
       debug:
         msg: "{{ansible_distribution}}"
