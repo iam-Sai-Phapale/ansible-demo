@@ -6,19 +6,19 @@
   tasks:
     - name: Install Package
       package:
-        name: mysql-server  # Replace with the package you want to install
+        name: apache2  # Replace with the package you want to install
         state: present
         update_cache: yes
 
     - name: Start and Enable Service
       systemd:
-        name: mysql  # Replace with the service you want to start/enable
+        name: apache2  # Replace with the service you want to start/enable
         state: started
         enabled: yes
 
     - name: Deploy  
       file:
-        path: /opt/demo  # Change to your deployment path
+        path: /opt/hi  # Change to your deployment path
         state: directory
         mode: '0755'
 
