@@ -2,7 +2,7 @@
 - name: condition 
   hosts: all
   become: true
-  task:
+  tasks:
     - name: print centos
       debug:
         msg: this is centos 
