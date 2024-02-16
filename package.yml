@@ -12,5 +12,5 @@
 
     - name: Start and Enable Service
       systemd:
-        name: mysql-server  # Replace with the service you want to start/enable
+        name: mysql  # Replace with the service you want to start/enable
         state: started
