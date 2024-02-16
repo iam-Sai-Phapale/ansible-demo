@@ -1,6 +1,7 @@
 ---
 - name: my first playbook for testing
   hosts: all
+  gather_facts: false
   tasks:
     - name: printing task
       debug:
