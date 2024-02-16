@@ -1,28 +1,16 @@
 ---
-- name: Manage Package and Deployment
+- name: Install and Start/Enable Package
   hosts: all
-  become: true  # Run tasks with elevated privileges (sudo)
+  become: yes  # Run tasks with elevated privileges (sudo)
 
   tasks:
     - name: Install Package
       package:
-        name: nginx  # Change to the package you want to install
+        name: nginx  # Replace with the package you want to install
         state: present
         update_cache: yes
 
     - name: Start and Enable Service
       systemd:
-        name: nginx  # Change to the service you want to start/enable
+        name: nginx  # Replace with the service you want to start/enable
         state: started
-        enabled: yes
-
-    - name: Deploy Application
-      file:
-        path: /opt/demo  # Change to your deployment path
-        state: directory
-        mode: '0755'
-
-#    - name: Uninstall Package
-#      package:
-#        name: your_package_name  # Change to the package you want to uninstall
-#        state: absent
