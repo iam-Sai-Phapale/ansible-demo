@@ -1,0 +1,11 @@
+---
+- name: Uninstall Package
+  hosts: all
+  become: yes  # Run tasks with elevated privileges (sudo)
+
+  tasks:
+
+    - name: Uninstall Package
+      package:
+        name: apache2  # Change to the package you want to uninstall
+        state: absent

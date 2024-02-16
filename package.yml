@@ -22,4 +22,9 @@
         state: directory
         mode: '0755'
 
+#    - name: Uninstall Package
+#      package:
+#       name: your_package_name  # Change to the package you want to uninstall
+#       state: absent
+
 
