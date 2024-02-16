@@ -6,11 +6,11 @@
   tasks:
     - name: Install Package
       package:
-        name: nginx  # Replace with the package you want to install
+        name: mysql-server  # Replace with the package you want to install
         state: present
         update_cache: yes
 
     - name: Start and Enable Service
       systemd:
-        name: nginx  # Replace with the service you want to start/enable
+        name: mysql-server  # Replace with the service you want to start/enable
         state: started
