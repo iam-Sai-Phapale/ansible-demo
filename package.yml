@@ -1,7 +1,7 @@
 ---
 - name: Manage Package and Deployment
   hosts: all
-  become: yes  # Run tasks with elevated privileges (sudo)
+  become: true  # Run tasks with elevated privileges (sudo)
 
   tasks:
     - name: Install Package
