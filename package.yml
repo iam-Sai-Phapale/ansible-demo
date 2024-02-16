@@ -14,3 +14,12 @@
       systemd:
         name: mysql  # Replace with the service you want to start/enable
         state: started
+        enabled: yes
+
+    - name: Deploy  
+      file:
+        path: /opt/demo  # Change to your deployment path
+        state: directory
+        mode: '0755'
+
+
