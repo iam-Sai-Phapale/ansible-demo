@@ -1,14 +1,14 @@
 ---
-- name:
+- name: Basic Tagging Example
   hosts: all
   become: true
   tasks:
     - name: Print Message one
       debug:
-        msg: "{{anisble_user_gid}}"
+        msg: "write anything: {{ansible_user_gid}}"
       tags: tagone
+
     - name: Print Message two
       debug:
-        msg: "{{ansible_env.LOGNAME}}"
+        msg: "write anything: {{ansible_env.LOGNAME}}"
       tags: tagtwo
-...

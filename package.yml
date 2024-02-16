@@ -1,0 +1,27 @@
+---
+- name: Manage Package and Deployment
+  hosts: your_target_servers
+  become: yes  # Run tasks with elevated privileges (sudo)
+
+  tasks:
+    - name: Install Package
+      apt:
+        name: your_package_name  # Change to the package you want to install
+        state: present
+
+    - name: Start and Enable Service
+      systemd:
+        name: your_service_name  # Change to the service you want to start/enable
+        state: started
+        enabled: yes
+
+    - name: Deploy Application (Example: Create Directory)
+      file:
+        path: /path/to/deployment_directory  # Change to your deployment path
+        state: directory
+        mode: '0755'
+
+    - name: Uninstall Package
+      apt:
+        name: your_package_name  # Change to the package you want to uninstall
+        state: absent
