@@ -2,7 +2,6 @@
 - name : condition 
   hosts : all
   become : true
-  
   task :
     - name : print centos
       debug :
