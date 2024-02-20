@@ -1,7 +1,7 @@
 - name: installing nginx
   package:
     name: nginx
-    state: latest
+    state: present
 - name: copyig index.html
   copy:
     src: index.html
