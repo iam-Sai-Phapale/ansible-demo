@@ -15,4 +15,6 @@
     - name: Task 4 - what is ansible_processor of local user 
       debug:
         msg: "{{ansible_processor}}"        
+
+#ansible -m ping all -m setup we get details of Nodes present in out /etc/ansible/hosts       
 ...        
